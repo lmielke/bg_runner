@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+colorama = "*"
+pyyaml = "*"
+requests = "*"
+tabulate = "*"
+runner = {editable = true, path = "."}
+psutil = "*"
+jinja2 = "*"
+setuptools = "*"
+graphviz = "*"
+pillow = "*"
+pystray = "*"
+
+[dev-packages]
+graphviz = "*"
+tox = "*"
+pytest = "*"
+black = "*"
+pre-commit = "*"
+toml = "*"
+openai = "*"
+
+[requires]
+python_version = "3.12"
+
+[scripts]
+git_sync = "lut ut -g"
+ut = "python -m unittest discover -s ${appName}/test/test_ut"
+it = "python -m unittest discover -s ${appName}/test/test_it -p 'it_*.py'"

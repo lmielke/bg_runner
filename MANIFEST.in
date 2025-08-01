@@ -1,0 +1,5 @@
+include README.md
+include CHANGELOG.md
+include LICENSE
+include runner/resources/_runner.yml
+include runner/logs/.gitkeep
